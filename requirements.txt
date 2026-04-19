@@ -1,0 +1,29 @@
+# --extra-index-url https://download.pytorch.org/whl/cu121
+import torch
+
+print("Torch version:", torch.__version__)
+print("CUDA available:", torch.cuda.is_available())
+
+if torch.cuda.is_available():
+    print("GPU:", torch.cuda.get_device_name(0))
+# # PyTorch with CUDA 12.1 support
+# torch==2.3.0
+# torchvision==0.18.0
+# torchaudio==2.3.0
+
+# # HuggingFace Libraries
+# transformers>=4.40.0
+# peft>=0.11.0
+# trl>=0.8.6
+# accelerate>=0.30.0
+# datasets>=2.19.0
+# bitsandbytes>=0.43.1
+
+# # RAG & Embeddings
+# sentence-transformers>=2.7.0
+# faiss-cpu>=1.8.0
+
+# # UI & Data
+# gradio>=4.31.0
+# pandas>=2.2.2
+# numpy<2.0.0
